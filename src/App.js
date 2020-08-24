@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header/header'
+import CenteredGrid from './Components/Content/content'
+import Footer from './Components/Footer/footer'
+import About from './Components/About/about'
+import Pricing from './Components/Pricing/pricing'
+import { Container }  from '@material-ui/core';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Butts. All of the Butts
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="xl">
+      <Header />
+      <CenteredGrid />
+      <About />
+      <Pricing />
+      <Footer />
+    </Container>
   );
 }
 
